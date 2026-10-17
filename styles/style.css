@@ -95,47 +95,37 @@
   block-size: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-}
-
-/* фильтры картинок: у каждой карточки свой */
-
-.card__image_filter_1 {
   object-position: 99% 50%;
 }
 
-.card__image_filter_2 {
-  object-position: 99% 50%;
-  filter: sepia(60%) saturate(50%) brightness(0.95);
+/* фильтры картинок: универсальные, названы по типу фильтра */
+
+.filter-sepia {
+  filter: sepia(60%);
 }
 
-.card__image_filter_3 {
-  object-position: 50% 50%;
-  filter: hue-rotate(75deg) saturate(1.3);
+.filter-hue-rotate {
+  filter: hue-rotate(75deg);
 }
 
-.card__image_filter_4 {
-  object-position: 0% 50%;
-  filter: hue-rotate(-40deg) saturate(1.5) brightness(1.05);
+.filter-saturate {
+  filter: saturate(1.8);
 }
 
-.card__image_filter_5 {
-  object-position: 15% 50%;
-  filter: contrast(1.35) saturate(1.5) invert(8%);
+.filter-contrast {
+  filter: contrast(1.35);
 }
 
-.card__image_filter_6 {
-  object-position: 100% 50%;
-  filter: grayscale(100%) contrast(1.2) brightness(0.9);
+.filter-grayscale {
+  filter: grayscale(100%);
 }
 
-.card__image_filter_7 {
-  object-position: 35% 50%;
-  filter: sepia(100%) hue-rotate(170deg) saturate(1.6);
+.filter-brightness {
+  filter: brightness(1.2);
 }
 
-.card__image_filter_8 {
-  object-position: 65% 50%;
-  filter: hue-rotate(130deg) brightness(1.15) saturate(0.8);
+.filter-sepia-hue-rotate {
+  filter: sepia(100%) hue-rotate(170deg);
 }
 
 .card__label {
